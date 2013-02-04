@@ -1,0 +1,681 @@
+/* --------------- Fiche Vehicule Selectup --------------- */
+
+#fiche_vehicule_container {
+background: #f9f9f9; /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Y5ZjlmOSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkOWQ5ZDkiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(top,  #f9f9f9 0%, #d9d9d9 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f9f9f9), color-stop(100%,#d9d9d9)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #f9f9f9 0%,#d9d9d9 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #f9f9f9 0%,#d9d9d9 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #f9f9f9 0%,#d9d9d9 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #f9f9f9 0%,#d9d9d9 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#d9d9d9',GradientType=0 ); /* IE6-8 */
+width:970px;
+}
+
+#fiche_vehicule {
+padding:5px;
+margin-bottom:10px;
+}
+
+/* Partie Left */
+#fiche_vehicule .fiche_left {
+float:left;
+width:320px;
+}
+
+#fiche_vehicule .fiche_left li{
+list-style:none;
+}
+
+.loupe {
+position:relative;
+bottom:30px;
+left: 292px;
+z-index:100;
+}
+
+/* Partie Centre */
+
+#fiche_vehicule .fiche_center {
+width:365px;
+float:left;
+margin-left: 5px;
+}
+
+/* Partie Droite */
+#fiche_vehicule .fiche_right {
+width:245px;
+float:left;
+margin-left: 25px;
+min-height:340px;
+}
+
+
+/* Photos et galleryView */
+#photos_vehicule {background:url(images/photos_bg.jpg) no-repeat;}
+#photos_vehicule .filmstrip { margin-top: 1px; }
+#photos_vehicule .pointer { border:none !important; }
+#photos_vehicule .img_wrap { border:none !important; }
+
+
+/* Info générales */
+#fiche_info_princ {
+background-image:url(images/prix_modele.png);
+background-position:right;
+background-repeat:no-repeat;
+color:#fff;
+font-weight:bold;
+padding: 5px 0 0 27px;
+height: 84px;
+width: 338px;
+}
+
+#fiche_info_princ .marque {
+font-size:16px;
+height: 19px;
+overflow: hidden;
+}
+
+#fiche_info_princ .marque span {
+font-size:12px;
+font-weight:normal;
+}
+
+#fiche_info_princ .version {
+font-size:14px;
+font-weight:normal;
+height: 16px;
+overflow: hidden;
+}
+
+#fiche_info_princ .prix {
+float: left;
+margin-top: 12px;
+padding-top: 2px;
+font-size:23px;
+border-top:1px solid #fff;
+width: 227px;
+}
+
+#fiche_info_princ .garantie {
+float:right;
+margin-top: 13px;
+margin-right:4px;
+line-height: 16px;
+color:#000;
+font-size:15px;
+text-align:center;
+width:95px;
+background:#fff;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+}
+
+/* Info détaillées */
+#fiche_info_details {
+width:345px;
+overflow:hidden;
+margin: 10px 0 0 20px;
+}
+
+#fiche_info_details .info_titre {
+width:120px;
+float:left;
+height:23px;
+line-height:23px;
+padding-left:10px;
+}
+
+#fiche_info_details .info_content {
+float:left;
+width:215px;
+height:23px;
+line-height:23px;
+font-weight:bold;
+overflow:hidden;
+}
+
+#fiche_info_details .grey .info_titre,
+#fiche_info_details .grey .info_content{
+background-color:#c3c3c3;
+}
+
+/* bouton retour */
+
+#back_results  a{
+color:#000;
+}
+
+/* Localisation */
+#info_dispo {
+width:245px;
+color:#000;
+margin-bottom:35px;
+}
+
+#info_dispo .dispo_title {
+font-size:18px;
+font-weight:bold;
+width:245px;
+}
+
+#info_dispo h2 {
+font-size:13px;
+padding-bottom:5px;
+font-weight:bold;
+text-transform:uppercase;
+}
+
+#info_dispo p {
+margin:5px 0;
+font-size:13px;
+}
+
+#info_dispo .dispo_tel {
+font-size:24px;
+font-weight:bold;
+letter-spacing:2px;
+}
+
+
+/* Crédit */
+#info_credit {
+width:217px;
+padding:5px;
+}
+
+#info_credit h2{
+font-size:11px;
+padding-top: 0;
+padding-bottom:5px;
+font-weight:bold;
+
+}
+/*
+#info_credit a {
+color:#fff;
+font-weight:bold;
+line-height:8px;
+}
+
+#info_credit .bouton_credit {
+text-align:center;
+}
+
+#phrase_financement {
+color:#333;
+font-size:11px;
+height:38px;
+margin-bottom:5px;
+position:relative;
+}
+
+.infos_tooltip_financement {
+background-color:#86868d;
+color:#fff;
+display:none;
+float:left;
+font-size:11px;
+margin-top:5px;
+padding:5px;
+position:absolute;
+top:0;
+left:0;
+text-align:left;
+}
+
+
+#infos_financement {
+float: left;
+width: 218px;
+margin-bottom: 10px;
+font-size: 11pt;
+font-weight: bold;
+}
+
+#infos_financement span {
+color: #ffffff;
+}
+
+.tooltip_financement {
+padding: 10px;
+background-color: #ffffff;
+border: 1px solid #000000;
+}
+
+.tooltip_cetelem {
+background-image: url('templates/images/logo_cetelem.jpg');
+background-position: 95% 90%;
+background-repeat: no-repeat;
+}
+
+.tooltip_sofinco {
+padding-bottom: 10px;
+font-size:12px;
+overflow:scroll;
+width:700px;
+height:400px;
+}
+
+.tooltip_sofinco .texte11{
+font-size:11px;
+}
+
+.tooltip_sofinco .texte13{
+font-size:13px;
+}
+*/
+/* Outils */
+
+.fiche_reservez,
+.fiche_envoyez,
+.fiche_ajoutez,
+.fiche_imprimez {
+width:191px;
+height:28px;
+padding-left:40px;
+margin-top:12px;
+font-size:14px;
+font-weight:bold;
+}
+
+.fiche_reservez a,
+.fiche_envoyez a,
+.fiche_ajoutez a,
+.fiche_imprimez a{
+line-height:28px;
+}
+
+
+.fiche_ajoutez span{
+line-height:28px;
+}
+
+.fiche_reservez {background:url(images/reservez.png) no-repeat left center;}
+.fiche_envoyez {background:url(images/envoyez.png) no-repeat left center;}
+.fiche_ajoutez {background:url(images/ajoutez.png) no-repeat left center;}
+.fiche_imprimez {background:url(images/imprimez.png) no-repeat left center;}
+
+
+/* Onglets */
+
+#tabMenu {margin:0;}
+
+#tabMenu li {
+float:left;
+height:25px;
+cursor:pointer;
+font-size:14px;
+background-color:#686e76;
+color:#FFF;
+-moz-border-radius: 4px 4px 0 0;
+-webkit-border-radius: 4px 4px 0 0;
+border-radius: 4px 4px 0 0;
+margin-right: 1px;
+list-style:none;
+}
+
+#tabMenu li a {
+color:#FFF;
+padding:8px 10px 0 10px;
+display: block;
+}
+#tabMenu li span{
+display: block;
+padding:5px 10px 0 10px;
+}
+#tabMenu li.sendFriend,
+#tabMenu li.sendFriend.selected,
+#tabMenu li.sendFriend.mouseout {
+background-color:#00aceb;
+}
+
+#tabMenu li.mouseout {background-color:#686e76;}
+#tabMenu li.mouseover {background-color:#aeb2b9;}
+#tabMenu li.selected {background-color:#aeb2b9;}
+
+#tabBody {
+background-color:#dbdbdb; 
+padding:10px;
+-moz-border-radius: 0 4px 4px 4px;
+-webkit-border-radius: 0 4px 4px 4px;
+border-radius: 0 4px 4px 4px; 
+}
+
+#tabBody div.tabBody_box {display:none;}
+#tabBody div.show.tabBody_box {display:block;}
+
+#tabBody div ul {
+margin:5px 10px 5px 25px;
+padding:0;
+}
+
+*html #tabBody div ul {
+margin-left:10px;
+padding-left:15px;
+}
+
+#tabBody div ul li {
+float: left;
+width: 280px;
+padding:10px 10px 0 10px;
+}
+#tabBody #sendFriend label {
+display:block;
+float:left;
+text-align:center;
+width:200px;
+padding-top:5px;
+}
+
+#onglet_photos {
+height:auto;
+}
+
+#form_renseignement h2 {
+padding: 10px;
+}
+
+#sendFriend p{
+margin-bottom:10px;
+}
+
+#sendFriend .submit_go {
+margin-left:200px;
+}
+
+/* ---------------------------------------------------------------- */
+
+#desc_recherche {
+color:#666;
+font-weight:bold;
+margin-left:10px;
+margin-bottom:5px;
+padding-top:10px;
+width:500px;
+}
+
+/*--------------------------  COMPARATEUR  -----------------------*/
+
+#comparate_top h1{
+padding:5px 0;
+}
+
+#comparate_bottom {
+clear:both;
+}
+
+#selection_vehicule{
+background: #f9f9f9; /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Y5ZjlmOSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkOWQ5ZDkiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(top,  #f9f9f9 0%, #d9d9d9 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f9f9f9), color-stop(100%,#d9d9d9)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #f9f9f9 0%,#d9d9d9 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #f9f9f9 0%,#d9d9d9 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #f9f9f9 0%,#d9d9d9 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #f9f9f9 0%,#d9d9d9 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#d9d9d9',GradientType=0 ); /* IE6-8 */
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+width:950px;
+margin-bottom:15px;
+padding:10px;
+}
+
+#selection_vehicule .intro_account{
+margin:0 0 10px 0;
+}
+
+#selection_vehicule .info_account{
+padding:10px;
+text-align:center;
+}
+
+a.del_compare {
+padding-right:75px;
+}
+
+#comparate_table {
+float: left;
+height: auto;
+margin-top: 15px;
+margin-right: 5px;
+background-color: #fff;
+border: 1px solid #bab9b9;
+}
+
+#comparate_table td{
+width: 158px;
+text-align:center;
+vertical-align:middle;
+border-right: 1px solid #bab9b9;
+padding:10px;
+}
+
+.compare_btn {
+height:21px;
+}
+
+.item_result_ligne_gris {
+background-color: #eeeeee;
+font-size: 11px;
+font-weight: bold;
+color : #333;
+}
+
+.item_result_ligne_blanc {
+background-color: #ffffff;
+font-size: 11px;
+font-weight: bold;
+color : #333;
+}
+
+/* ------------ Résultats recherche -----------------*/
+
+#search_vehicule_results .top {
+padding: 0 10px;
+}
+
+/* Présentation Tableau*/
+
+#search_vehicule_results.tableau .content {
+width: 98%;
+margin-top:10px;
+padding:0 1%;
+}
+
+.header_tableau {
+text-align:center;
+height:21px;
+line-height:21px;
+color:#fff;
+padding-top:1px;
+-webkit-border-top-left-radius: 5px;
+-webkit-border-top-right-radius: 5px;
+-moz-border-radius-topleft: 5px;
+-moz-border-radius-topright: 5px;
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+background: #0e0e0e; /* Old browsers */
+background: -moz-linear-gradient(top, #0e0e0e 0%, #7d7e7d 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0e0e0e), color-stop(100%,#7d7e7d)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #0e0e0e 0%,#7d7e7d 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #0e0e0e 0%,#7d7e7d 100%); /* Opera11.10+ */
+background: -ms-linear-gradient(top, #0e0e0e 0%,#7d7e7d 100%); /* IE10+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0e0e0e', endColorstr='#7d7e7d',GradientType=0 ); /* IE6-9 */
+background: linear-gradient(top, #0e0e0e 0%,#7d7e7d 100%); /* W3C */
+}
+
+#search_vehicule_results.tableau .header_tableau a{
+color: #fff;
+text-decoration: underline;
+}
+#search_vehicule_results.tableau .header_tableau img{
+vertical-align: middle;
+}
+
+.header_tableau .photos, .row_tableau .photos,
+.header_tableau .ville, .row_tableau .ville,
+.header_tableau .marque_modele, .row_tableau .marque_modele,
+.header_tableau .energie, .row_tableau .energie,
+.header_tableau .annee, .row_tableau .annee,
+.header_tableau .km, .row_tableau .km{
+border-right:1px solid #ccc;
+}
+
+
+.header_tableau .photos{
+width:11%;
+float:left;
+padding-left:1%;
+}
+
+.row_tableau .photos {
+width:12%;
+float:left;
+text-align:center;
+}
+
+.header_tableau .ville, .row_tableau .ville{
+width:15%;
+float:left;
+padding-left:2px;
+}
+
+.header_tableau .marque_modele, .row_tableau .marque_modele{
+width:27%;
+float:left;
+padding-left:1%;
+}
+
+.header_tableau .energie, .row_tableau .energie {
+width:11%;
+float:left;
+padding-left:1%;
+}
+
+.header_tableau .annee, .row_tableau .annee {
+width:7%;
+float:left;
+padding-left:1%;
+}
+
+.header_tableau .km, .row_tableau .km {
+width:10%;
+float:left;
+padding-left:1%;
+}
+
+.header_tableau .prix, .row_tableau .prix {
+width:9%;
+float:left;
+padding-left:1%;
+}
+
+.row_tableau .photos {
+/*background: url('images/no_visuel_small_bg.jpg') no-repeat center center;*/
+}
+
+.row_tableau .photos a{
+display:block;
+width:70px;
+height:52px;
+}
+
+.row_tableau .photos img {
+width:70px;
+height:52px;
+}
+
+.row_tableau .photos,
+.row_tableau .ville,
+.row_tableau .marque_modele,
+.row_tableau .energie,
+.row_tableau .annee,
+.row_tableau .km {
+height:63px;
+padding-top:10px;
+border-right:1px solid #ccc;
+}
+
+.row_tableau .prix {
+height:63px;
+padding-top:10px;
+}
+
+.row_tableau div.fav_on_off {
+position: absolute;
+top: 31px;
+right: 15px;
+}
+
+.row_tableau {
+border-left:1px solid #ccc;
+border-right:1px solid #ccc;
+position: relative;
+}
+
+.row_tableau.last,
+.row_tableau.no_result{
+border-bottom:1px solid #ccc;
+}
+
+.row_tableau.no_result {
+border-left:1px solid #ccc;
+border-right:1px solid #ccc;
+line-height: 100px;
+text-align: center;
+}
+
+a.table_link{
+display:block;
+}
+
+.bg_blanc {
+background-color:#fff;
+}
+
+.bg_gris {
+background-color:#ededed;
+}
+
+#search_vehicule_results .promotion img{
+height:40px;
+width:40px;
+border:0 none;
+margin:auto;
+position:absolute;
+top:-1px;
+left:-1px;
+}
+
+/*pagination*/
+
+.list_vehicule_paginator{
+padding:5px;
+font-size:11px;
+}
+
+.list_vehicule_paginator a{
+padding:5px;
+font-size:11px;
+}
+
+.list_vehicule_paginator span.current_page{
+padding:5px;
+font-size:15px;
+font-weight:bold;
+}
+
+
+/*-----------RECHERCHE LIBRE--------------*/
+.search_teaser {
+height:30px;
+padding:5px;
+overflow:hidden;
+}

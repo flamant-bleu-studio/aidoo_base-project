@@ -1,0 +1,112 @@
+/**
+* Design du site qui ne sera pas visible dans tinyMCE.
+*/
+
+html{
+background:#fff;
+}
+
+/*si on a du contenu : souvent page accueil*/
+/*
+#contentbottom{
+width:700px;
+}*/
+
+/*-------HEADER-------*/
+#header1,
+#header2{
+width:990px;
+clear:both;
+}
+.ph_horizontal #footer1 .bloc, .ph_horizontal #footer2 .bloc{
+margin-right:0;
+}
+
+#header1{
+
+}
+#sidebar_left, 
+#sidebar_right{
+width:265px;
+}
+
+#sidebar_left{
+margin-right:15px;
+}
+/*et ou*/
+#sidebar_right{
+margin-left:15px;
+}
+
+/* SiteMap */
+
+#sitemap li {
+list-style:none;
+margin-top:8px;
+}
+
+
+/*----------pages contenu--------*/
+
+#content_middle .document, 
+#content_middle .contact, 
+#content_middle .view_article, 
+#content_middle #content_list,
+#content_middle #page_selectup{
+width:660px;
+padding:15px;
+}
+
+#content_middle{
+text-align:left;
+}
+
+#content{
+background: #ffffff;
+-webkit-border-radius: 15px;
+-moz-border-radius: 15px;
+border-radius: 15px;
+}
+
+/*---------- PAGE CONTACT -----------*/
+
+#contact_form {
+width:970px;
+height:300px;
+}
+#contact_content {
+	width:970px;
+    font-size: 15px;
+    margin: 20px 0 30px;
+}
+
+.contact label {
+    color: #4D4D4D;
+    font-weight: bold;
+}
+.contact input[type="text"], .contact textarea, .contact select {
+    background-color: white;
+    border: 1px solid #CCCCCC;
+    border-radius: 2px 2px 2px 2px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
+    color: rgba(0, 0, 0, 0.75);
+    font-size: 14px;
+}
+
+#contact_form  #form_send .form_elem input{
+font-weight:bold;
+background: #f9cd70;
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Y5Y2Q3MCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmN2I1MmMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(top,  #f9cd70 0%, #f7b52c 100%); 
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f9cd70), color-stop(100%,#f7b52c));
+background: -webkit-linear-gradient(top,  #f9cd70 0%,#f7b52c 100%); 
+background: -o-linear-gradient(top,  #f9cd70 0%,#f7b52c 100%);
+background: -ms-linear-gradient(top,  #f9cd70 0%,#f7b52c 100%); 
+background: linear-gradient(to bottom,  #f9cd70 0%,#f7b52c 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9cd70', endColorstr='#f7b52c',GradientType=0 );
+border:none;
+color:#fff;
+padding:2px;
+cursor:pointer;
+ border-radius: 2px 2px 2px 2px;
+}

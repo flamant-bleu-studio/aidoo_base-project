@@ -1,0 +1,770 @@
+
+/* ====== Feuille de styles génériques =====
+ * 
+ * NE PAS MODIFIER => A surcharger dans design.css
+ */
+ 
+/*==== Class génériques ====*/
+
+.clear{
+clear: both;
+}
+.left{
+float: left;
+}
+.right{
+float: right;
+}
+
+.center {
+text-align:center;
+}
+.bold {
+font-weight:bold;
+}
+.italic{
+font-style : italic;
+}
+
+input{
+cursor:pointer;
+}
+/*==== Blocs & Placeholders ====*/
+
+.ph_vertical .bloc{
+margin-bottom:15px;
+}
+
+.ph_horizontal .bloc{
+float:left;
+margin-right:15px;
+margin-bottom:15px;
+}
+
+.ph_horizontal .bloc.last,
+.ph_horizontal .bloc.single{
+margin-right:0;
+}
+
+.ph_horizontal .bloc.right{
+	float:right;
+}
+
+#global {
+margin: 0 auto;
+text-align:center;
+}
+
+#header{
+display:block;
+}
+
+#header #header1 { }
+#header #header2 { }
+
+/*----#container_content { float: left;}*/
+#container_content { float: left;}
+#container_content #content_middle #content { display: block; }
+
+#container_content #content_top { display: block; }
+#container_content #content_top #content_top1 { }
+#container_content #content_top #content_top2 { }
+
+#sidebar_right .bloc,
+#sidebar_left .bloc{
+width:100%;
+}
+
+/*----#sidebar_left { float: left; }*/
+#sidebar_left { float: left; }
+#sidebar_left #sidebar_left1 { float: left; }
+#sidebar_left #sidebar_left2 { float: left; }
+
+/*----#sidebar_right { float: left; }*/
+#sidebar_right { float: left; }
+#sidebar_right #sidebar_right1 { float: left; }
+#sidebar_right #sidebar_right2 { float: left; }
+
+#footer { display:block; clear:both; }
+#footer #footer1 { }
+#footer #footer2 { }
+
+/*---------- PAGE CONTACT -----------*/
+
+#contact_form {
+position:relative;
+}
+
+#contact_form #form_civilite,
+#contact_form #form_nom,
+#contact_form #form_prenom,
+#contact_form #form_telephone,
+#contact_form #form_email,
+#contact_form #form_sujet{
+position:absolute;
+left:0;
+}
+
+#contact_form #form_civilite{
+top:0;
+}
+
+#contact_form #form_nom{
+top:60px;
+}
+
+#contact_form  #form_prenom{
+top:120px;
+}
+
+#contact_form #form_telephone{
+top:180px;
+}
+
+#contact_form #form_email{
+top:240px;
+}
+
+#contact_form #form_sujet,
+#contact_form #form_message,
+#contact_form #form_send{
+position:absolute;
+left:355px;
+}
+
+#contact_form #form_sujet{
+top:0;
+}
+
+#contact_form #form_message{
+top:60px;
+}
+
+#contact_form #form_send{
+top:241px;
+}
+#contact_form .form_desc {
+display:none;
+}
+
+.contact .form_text {
+    margin-bottom: 3px;
+	height:14px;/*pour uniformiser la hauteur entre les différents navigateurs*/
+}
+.contact input[type="text"] {
+    height: 17px;
+    width: 300px;
+}
+.contact select {
+    height: 31px;
+    width: 312px;
+}
+.contact textarea {
+    height: 162px;
+    width: 600px;
+}
+.contact textarea{
+	margin: 0 0 5px;
+}
+.contact input[type="text"], .contact textarea, .contact select {
+    display: block;
+    margin: 0 0 12px;
+    padding: 6px;
+}
+.contact #send {
+    height: 31px;
+    width: 230px;
+}
+/* ==== MODULE Diapo / Galerie Photo ==== */
+
+/* Bxslider : classic */
+.diaporama.bxslider ul {
+margin: 0;
+}
+
+.diaporama.bxslider li {
+position: relative;
+}
+.diaporama.bxslider li .caption {
+position: absolute;
+top: 0;
+z-index: 80;
+}
+
+/* -- Galerie mozaïque -- */
+
+#mozaique_photo a.image{
+	display: block;
+	float: left;
+	padding: 4px;
+}
+
+#mozaique_photo:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+
+/* ==== Module article - vue mozaïque ==== */
+
+#article_cat_grid li {
+	display:inline-block;
+	vertical-align:top;
+	text-align:center;
+	padding:4px;
+	zoom:1;
+	*display: inline;
+	border:none;
+}
+
+/* ==== Module search ==== */
+
+#search_results .search_result{
+border-bottom:1px solid #cccccc;
+padding-bottom:15px;
+}
+
+#search_results .search_result .image{
+float:left;
+padding:0 10px;
+}
+
+#search_results .result_title{
+    font-size: 1.273em;
+    line-height: 127%;
+}
+
+#search_results .description{
+margin-bottom:15px;
+}
+
+#search_results .more{
+text-align:right;
+clear:both;
+}
+
+/* ================== Suite a revoir !!! ===================== */
+
+/*==== Menu Déroulant : Horizontal ====*/
+
+.bloc-menu .deroule.horizontal ul  a { 
+text-decoration: none; 
+}
+
+/* LEVEL 1 */
+.deroule.horizontal ul{
+	position: relative;
+	margin:0;
+	padding:0;
+}
+.deroule.horizontal ul li {
+	zoom: 1; /* HOVER IE6 !!!! don't modify */
+	list-style: none;
+	display:inline;
+	padding-bottom:10px;
+}
+.deroule.horizontal ul li a {
+	display: inline-block;
+	line-height:26px;
+}
+.deroule.horizontal ul li.hover{
+	position: relative;
+}
+
+/* LEVEL 2 */
+.deroule.horizontal ul ul {
+	z-index: 150;
+	width: 100px;
+	visibility: hidden;
+	position: absolute;
+	top: 19px;
+	left: 0;
+	margin:0;
+	padding:0;
+}
+.deroule.horizontal ul ul li {
+	float: none;
+	clear:left;
+}
+
+/* IE 6 & 7 Needs Inline Block */
+.deroule.horizontal ul ul li a {
+	border-right: none;
+	width: 100%;
+	display: inline-block;
+	line-height:26px;
+}
+
+/* 	LEVEL 3 */
+.deroule.horizontal ul ul ul {
+	left: 100%;
+	top: -5px;
+}
+
+/*==== Menu deroulant : Vertical ====*/
+
+.deroule.vertical ul li ul { visibility:visible; }
+
+.deroule.vertical ul {
+	position: static;
+	left: 10px;
+}
+
+.deroule.vertical ul li{
+	list-style:none;
+	margin:0;
+	padding:0;
+	width:80px;
+}
+
+.deroule.vertical ul ul {
+	position:absolute;
+	top:0;
+	left:80px;
+}
+
+.deroule.vertical ul li {
+	position:relative;
+	margin:0px;
+	padding:0px;
+}
+
+.deroule.vertical  ul a {
+	display:block;
+	width:100%;
+	text-decoration: none;
+	width: 80px;
+}
+
+.deroule.vertical ul a {
+	text-decoration: none;
+}
+
+/*==== Menu Fixe : Horizontal ====*/
+
+.fixe.horizontal ul.level-1 li{
+display:block;
+float:left;
+}
+
+.fixe.horizontal ul.level-2{
+margin:0;
+}
+
+.fixe.horizontal ul.level-2 li{
+float:none;
+padding:0;
+}
+
+/*==== Menu Fixe : vertical ====*/
+
+/*======Formulaires selectup=====*/
+
+#contact_form  #form_idcar,
+#contact_form  #form_ref_dms,
+#contact_form  #form_vehicule_marque,
+#contact_form  #form_vehicule_modele,
+#contact_form  #form_concession_desc,
+#contact_form  #form_concession_adresse3{
+margin:0;
+}
+
+
+/*==== SU : SELECTION OCCASION CLASSIC ====*/
+
+.bloc-selectupVehiculesv2 .item{
+float:left;
+margin:10px;
+width:96px;
+}
+
+.bloc-selectupVehiculesv2 .item .image{
+width:96px;
+height:72px;
+}
+
+.bloc-selectupVehiculesv2 .item .info{
+border:1px solid #bbbab8;
+margin-top:3px;
+}
+
+/*==== SU : TOP 10 SLIDER ====*/
+
+.bloc-selectupVehiculesv2{
+margin-bottom:15px;
+width:100%;
+}
+
+#slider_body{
+clear:both;
+position:relative;
+}
+
+.slider_carrousel{
+margin:auto;
+}
+
+.slider_carrousel li.item_top10{
+width:96px;
+padding:5px;
+}
+
+.slider_carrousel  li.item_top10 a{
+display:block;
+width:96px;
+height:72px;
+}
+
+.slider_carrousel  li.item_top10 img{
+display:block;
+height:72px;
+width:96px;
+}
+
+#prevBtn{
+cursor:pointer;
+position:absolute;
+right:0;
+top:0;
+}
+
+#prevBtn img{
+padding-top:5px;
+}
+
+#nextBtn{
+cursor:pointer;
+position:absolute;
+left:0;
+top:0;
+}
+
+#nextBtn img{
+padding-top:5px;
+}
+
+.info .modele{
+display:block;
+overflow:hidden;
+}
+
+/*==== STYLES DE BASE BX SLIDER ====*/
+
+.bx-wrapper{
+position:static !important;
+margin:auto;
+}
+
+/*next button*/
+.bx-next {
+	position:absolute;
+	top:26px;
+	right:0;
+	z-index:900;
+	width: 26px;
+	height: 45px;
+	text-indent: -999999px;
+	background: url(../img/caroussel_left.png) no-repeat;
+}
+
+/*previous button*/
+.bx-prev {
+	position:absolute;
+	top:30px;
+	left:0;
+	z-index:10;
+	width: 26px;
+	height: 45px;
+	text-indent: -999999px;
+	background: url(../img/caroussel_right.png) no-repeat;
+}
+
+/*====BLOC ACTUALITES==== */
+
+.bloc-articlesv2 {
+text-align:left;
+position:relative;
+}
+
+.bloc-articlesv2 .article .image{
+float:left;
+padding:0 5px 0 0;
+}
+
+.bloc-articlesv2 a.linkArchives{
+position:absolute;
+top:17px;
+right:15px;
+}
+
+/*====BLOC ACTUALITES V2==== */
+
+.bloc-articles ul, .bloc-articles li {
+margin: 0;
+padding: 0;
+}
+
+.bloc-articles .no-scroll li {
+list-style-type: none;	
+}
+
+.bloc-articles .no-scroll.align-hori li {
+float: left;
+width:150px;
+}
+
+/*====AFFICHAGE 1 ACTUALITE==== */
+
+.view_article .image{
+margin: 10px 0;
+}
+
+/*=========MOTEUR DE RECHERCHE SELECTUP=========*/
+.bloc-selectupSearchv2 .select label{
+display:none;
+}
+
+.bloc-selectupSearchv2 .select,
+.bloc-selectupSearchv2 .slider{
+margin:0 0 10px 0;
+}
+/* skin slider (search bloc etc...)*/
+
+.ui-slider { 
+position:relative; 
+text-align:left; 
+}
+
+.ui-slider a:nth-child(2){
+background-image:url(../img/slider_left.png); 
+}
+
+.ui-slider a:nth-child(3){
+background-image:url(../img/slider_right.png); 
+}
+
+.ui-slider-horizontal .ui-slider-handle {
+background-image:url(../img/plot_slider.png); 
+height:18px; 
+margin-left: -10px; 
+top:0; 
+width:18px; 
+}
+
+.ui-slider .ui-slider-handle { 
+cursor:pointer; 
+position:absolute; 
+z-index:2; 
+}
+
+.ui-slider-horizontal {
+background-image: url("../img/slider_range.gif");
+height:11px;
+margin:auto;
+width:210px;
+}
+
+/*=========LIENS DE REFERENCEMENT=========*/
+
+.bloc-selectupSearchLinkv2{
+clear:both;
+}
+
+.bloc-selectupSearchLinkv2 ul,
+.bloc-selectupSearchLinkv2 li{
+display:inline;
+}
+
+/*=====RESULTATS DE RECHERCHE====*/
+
+.intro,
+.outro{
+padding-left:10px;
+}
+
+/*=====MODULE JOB====*/
+
+.line_formjobs{
+margin:0 0 10px 0;
+}
+
+.line_formjobs #sector_job{
+margin-left:10px;
+}
+
+/*===== Module article - Mozaïque ====*/
+
+#article_cat_grid li
+{
+  display:inline-block;
+  vertical-align:top;
+  text-align:center;
+  padding:4px;
+  zoom:1;
+  *display: inline;
+  border:none;
+}
+
+.alert-success {
+    background-color: #DFF0D8;
+    border-color: #D6E9C6;
+    color: #468847;
+}
+
+.alert-warning {
+    background-color: #FCF8E3;
+    border: 1px solid #FBEED5;
+    color: #C09853;
+}
+
+.alert-error {
+   	background-color: #F2DEDE;
+    border-color: #EED3D7;
+    color: #B94A48;
+}
+
+.alert {
+    text-align: center;
+    border-radius: 4px 4px 4px 4px;
+    margin-bottom: 18px;
+    padding: 8px 35px 8px 14px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+.alert li{
+	list-style: none outside none;
+    margin-left: 0;
+}
+
+/*===== Pagination (twitter bootstrap v2.2.2) =====*/
+.pagination {
+  margin: 20px 0;
+}
+.pagination ul {
+  display: inline-block;
+  *display: inline;
+  /* IE7 inline-block hack */
+
+  *zoom: 1;
+  margin-left: 0;
+  margin-bottom: 0;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+.pagination ul > li {
+  display: inline;
+}
+.pagination ul > li > a,
+.pagination ul > li > span {
+  float: left;
+  padding: 4px 12px;
+  line-height: 20px;
+  text-decoration: none;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-left-width: 0;
+}
+.pagination ul > li > a:hover,
+.pagination ul > .active > a,
+.pagination ul > .active > span {
+  background-color: #f5f5f5;
+}
+.pagination ul > .active > a,
+.pagination ul > .active > span {
+  color: #999999;
+  cursor: default;
+}
+.pagination ul > .disabled > span,
+.pagination ul > .disabled > a,
+.pagination ul > .disabled > a:hover {
+  color: #999999;
+  background-color: transparent;
+  cursor: default;
+}
+.pagination ul > li:first-child > a,
+.pagination ul > li:first-child > span {
+  border-left-width: 1px;
+  -webkit-border-top-left-radius: 4px;
+  -moz-border-radius-topleft: 4px;
+  border-top-left-radius: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  -moz-border-radius-bottomleft: 4px;
+  border-bottom-left-radius: 4px;
+}
+.pagination ul > li:last-child > a,
+.pagination ul > li:last-child > span {
+  -webkit-border-top-right-radius: 4px;
+  -moz-border-radius-topright: 4px;
+  border-top-right-radius: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+  -moz-border-radius-bottomright: 4px;
+  border-bottom-right-radius: 4px;
+}
+.pagination-centered {
+  text-align: center;
+}
+.pagination-right {
+  text-align: right;
+}
+.pagination-large ul > li > a,
+.pagination-large ul > li > span {
+  padding: 11px 19px;
+  font-size: 17.5px;
+}
+.pagination-large ul > li:first-child > a,
+.pagination-large ul > li:first-child > span {
+  -webkit-border-top-left-radius: 6px;
+  -moz-border-radius-topleft: 6px;
+  border-top-left-radius: 6px;
+  -webkit-border-bottom-left-radius: 6px;
+  -moz-border-radius-bottomleft: 6px;
+  border-bottom-left-radius: 6px;
+}
+.pagination-large ul > li:last-child > a,
+.pagination-large ul > li:last-child > span {
+  -webkit-border-top-right-radius: 6px;
+  -moz-border-radius-topright: 6px;
+  border-top-right-radius: 6px;
+  -webkit-border-bottom-right-radius: 6px;
+  -moz-border-radius-bottomright: 6px;
+  border-bottom-right-radius: 6px;
+}
+.pagination-mini ul > li:first-child > a,
+.pagination-small ul > li:first-child > a,
+.pagination-mini ul > li:first-child > span,
+.pagination-small ul > li:first-child > span {
+  -webkit-border-top-left-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-bottom-left-radius: 3px;
+}
+.pagination-mini ul > li:last-child > a,
+.pagination-small ul > li:last-child > a,
+.pagination-mini ul > li:last-child > span,
+.pagination-small ul > li:last-child > span {
+  -webkit-border-top-right-radius: 3px;
+  -moz-border-radius-topright: 3px;
+  border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  -moz-border-radius-bottomright: 3px;
+  border-bottom-right-radius: 3px;
+}
+.pagination-small ul > li > a,
+.pagination-small ul > li > span {
+  padding: 2px 10px;
+  font-size: 11.9px;
+}
+.pagination-mini ul > li > a,
+.pagination-mini ul > li > span {
+  padding: 0 6px;
+  font-size: 10.5px;
+}

@@ -1,0 +1,101 @@
+.dndList {
+	margin: 0; 
+	list-style: none;
+}
+.dndList ul {
+	font-size: 1em; 
+	list-style: none;
+	margin:0 0 0 7px;
+}
+.dndList li {
+	display: block; 
+	width: 100%; 
+	clear: both; 
+}
+.dndList dl {
+	position: relative; 
+	display: block; 
+	height: 18px;
+	border-top: 1px solid #D3E5ED; 
+	border-bottom: 1px solid #D3E5ED; 
+	background:#fff;
+	padding: 3px 0;
+}
+.dndList dt{
+	float: left;
+	height: 18px;
+	font-weight: bold; 
+	margin-left: 30px; 
+	margin-top: 1px;
+}
+
+.dndList dt.actions{
+	float: left;
+	height: 18px;
+	font-weight: bold; 
+	margin-left: 30px; 
+	margin-top: 1px;
+	width: 50px;
+}
+
+.dndList dt.grip{
+	float: left;
+	height: 18px;
+	font-weight: bold; 
+	margin-left: 0px; 
+	margin-top: 1px;
+}
+
+
+
+.dndList dd{
+	float: left;
+	height: 18px;
+	margin: 1px 10px 0 10px;
+}
+
+.dndList .sm2_actions {
+	display: none; 
+}
+.dndList .sm2_status {
+	float: right;
+	width: 200px;
+	border-left: 1px solid #D3E5ED;
+}
+
+.dndList .dnd_expander {
+	position: absolute; 
+	left: 0; 
+	top: 4px;
+}
+.dndList .dnd_move {
+	position: absolute; 
+	cursor: move;
+	left: 18px; 
+	top: 4px;
+}
+
+.dndList .dropzone { 
+	height:5px; 
+	background-color:#fff; 
+}
+
+.dndList .dnd_listOpen {
+	/*ICI pour gérer la couleur de fond du décallage des enfants*/
+}
+
+.dndList .dnd_listOpen > dl > .dnd_expander {
+	display: block; 
+	width: 15px; 
+	height: 1em; 
+	background: url("open.gif") 50% 50% no-repeat;
+}
+.dndList .dnd_listClosed > dl > .dnd_expander {
+	display: block; 
+	width: 15px; 
+	height: 1em; 
+	background: url("closed.gif") 50% 50% no-repeat;
+}
+.dndList .dnd_listClosed ul {
+	display: none;
+}

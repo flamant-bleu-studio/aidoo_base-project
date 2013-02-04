@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contact_type>
+	<name>general</name>
+	<description>Formulaire de contact général</description>
+	<page>true</page>
+	<bloc>true</bloc>
+	<templates>
+		<template name="Formulaire general" file="contact_general" />
+	</templates>
+	
+	<nodes>
+		<elements>
+		
+			<civilite>
+				<type>select</type>
+				<options>
+					<label>Civilité : </label>
+					<description>Civilité</description>
+					<width>100</width>
+					<required>true</required>
+					<multioptions>
+						<Monsieur>Monsieur</Monsieur>
+						<Madame>Madame</Madame>
+						<Mademoiselle>Mademoiselle</Mademoiselle>
+					</multioptions>
+				</options>
+			</civilite>
+			
+			<nom>
+				<type>text</type>
+				<options>
+					<label>Nom : </label>
+					<description>Votre nom</description>
+					<width>100</width>
+					<required>true</required>
+				</options>
+			</nom>
+			
+			<prenom>
+				<type>text</type>
+				<options>
+					<label>Prénom : </label>
+					<description>Votre prénom</description>
+					<width>100</width>
+					<required>true</required>
+				</options>
+			</prenom>
+			
+			<telephone>
+				<type>text</type>
+				<options>
+					<label>Téléphone : </label>
+					<description>Votre téléphone</description>
+					<width>20</width>
+					<required>false</required>
+					<validators>
+						<phone>
+							<validator>phone</validator>
+						</phone>
+					</validators>
+				</options>
+			</telephone>
+			
+			<email>
+				<type>text</type>
+				<options>
+					<label>Email : </label>
+					<description>Votre email</description>
+					<width>100</width>
+					<required>true</required>
+					<validators>
+						<email>
+							<validator>EmailAddress</validator>
+						</email>
+					</validators>
+				</options>
+			</email>
+			
+			<sujet>
+				<type>text</type>
+				<options>
+					<label>Sujet : </label>
+					<description>Sujet : </description>
+					<width>100</width>
+					<required>true</required>
+				</options>
+			</sujet>
+			
+			<message>
+				<type>textarea</type>
+				<options>
+					<label>Message : </label>
+					<description>Votre message</description>
+					<cols>25</cols>
+					<rows>10</rows>
+					<required>true</required>
+				</options>
+			</message>
+			
+		</elements>
+	</nodes>
+		
+</contact_type>

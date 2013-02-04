@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<nodes>
+		<elements>
+
+			<biographie>
+				<type>textarea</type>
+				<options>
+					<label>Moi, en quelques mots</label>
+				</options>
+			</biographie>
+			
+			<images>
+				<type>multiUpload</type>
+				<options>
+					<label>Ma photo</label>
+					<params>
+						<autoUpload>true</autoUpload>
+						<allowedExtensions>jpg,jpeg,png,gif</allowedExtensions>
+						<uploadPath>profils</uploadPath>
+						<maxNumberOfFiles>1</maxNumberOfFiles>
+					</params>
+				</options>
+			</images>
+			
+			<birthday>
+				<type>DatePicker</type>
+				<options>
+					<label>Mon anniversaire</label>
+				</options>
+			</birthday>
+			
+			<url>
+				<type>text</type>
+				<options>
+					<label>Où me trouver (url)</label>
+				</options>
+			</url>
+			
+		</elements>
+	</nodes>
+	
+</config>

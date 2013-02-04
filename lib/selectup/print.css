@@ -1,0 +1,43 @@
+* {
+color: #000 !important;
+background: none !important;
+border:0 none !important;
+}
+
+#container {
+margin: 0 !important;	
+}
+
+#header1 .bloc-staticHtmlv2.right{
+display:none;
+}
+#fiche_vehicule_container {
+ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ffffff') !important;
+background: -moz-linear-gradient(center top , #ffffff, #ffffff) repeat scroll 0 0 transparent;
+background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ffffff));
+}
+
+.bloc-menu, #ariane, .recherche_libre, #top_content_fiche, #back_results, #credit, #bloc_renseignements, #dispo_top,
+#tabMenu, #footer, .blocTypesearch, #info_outils, #info_credit, .top_980, #btn_account, .blocTypeselectupUser, .bloc-flashContentv2 {
+display: none !important;	
+}
+
+
+.fiche_right {
+float:none !important;
+min-height:100px !important;
+clear:both;
+padding-top:10px;
+}
+
+.strip_wrapper, .nav-prev, .nav-next {
+	display: none !important;	
+}
+
+#fiche_right {
+	overflow: inherit !important;
+}
+
+#fiche_audi_photo {
+	height: 150px !important;
+}

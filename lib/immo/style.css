@@ -1,0 +1,93 @@
+/* Onglets */
+
+#tabMenu {margin:0;list-style:none;}
+
+#tabMenu li {
+float:left;
+height:25px;
+cursor:pointer;
+font-size:11px;
+font-weight:bold;
+background-color:#2F1501;
+color:#FFF;
+-moz-border-radius: 4px 4px 0 0;
+-webkit-border-radius: 4px 4px 0 0;
+border-radius: 4px 4px 0 0;
+margin-right: 1px;
+list-style:none;
+}
+
+#tabMenu li a {
+color:#FFF;
+padding:8px 10px 0 10px;
+display: block;
+}
+#tabMenu li span{
+display: block;
+padding:8px 10px 0 10px;
+}
+
+#tabMenu li.mouseout {background-color:#2F1501;}
+#tabMenu li.mouseover {background-color:#5d3719;}
+#tabMenu li.selected {background-color:#5d3719;}
+
+#tabBody {
+/*background-color:#dbdbdb;*/
+border:1px solid #5d3719;
+padding:10px;
+-moz-border-radius: 0 4px 4px 4px;
+-webkit-border-radius: 0 4px 4px 4px;
+border-radius: 0 4px 4px 4px; 
+text-align:left;
+}
+
+#tabBody div.tabBody_box {display:none;}
+#tabBody div.show.tabBody_box {display:block;}
+
+#tabBody div ul {
+margin:5px 10px 5px 25px;
+padding:0;
+}
+
+*html #tabBody div ul {
+margin-left:10px;
+padding-left:15px;
+}
+
+#tabBody div ul li {
+float: left;
+width: 290px;
+padding:10px 0px 0 0px;
+}
+
+#consommation, #emission_ges{
+width:300px;
+float:left;
+}
+
+ #google_map,
+ #map_canvas{
+height:500px;
+width:600px;
+}
+
+#tabBody #sendFriend label {
+display:block;
+float:left;
+text-align:center;
+width:200px;
+padding-top:5px;
+}
+
+#form_renseignement h2 {
+padding: 10px;
+}
+
+#sendFriend p{
+margin-bottom:10px;
+}
+
+#sendFriend .submit_go {
+margin-left:200px;
+}
+/* ---------------------------------------------------------------- */

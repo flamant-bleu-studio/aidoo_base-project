@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<type>
+
+	<name>Classique</name>
+	<description>Zone de contenu unique</description>
+	
+	<nodes>
+		<elements>
+		
+			<website>
+				<type>advancedSelect</type>
+				<options>
+					
+					<label>Type de la vidéo</label>
+					<multioptions>
+							<Youtube>Youtube</Youtube>
+							<Vimeo>Vimeo</Vimeo>
+							<Veoh>Veoh</Veoh>
+							<Metacafe>Metacafe</Metacafe>
+					</multioptions>
+				</options>
+			</website>
+			
+			<url_video>
+				<type>text</type>
+				<options>
+					<label>Url de la video</label>
+					<description>Code en fin d'url seulement</description>
+				</options>
+			</url_video>
+			
+			<height_vid_page>
+				<type>text</type>
+				<options>
+					<value>315</value>
+					<label>Page : Hauteur de la vidéo</label>
+					<description>en px</description>
+				</options>
+			</height_vid_page>
+			
+			<width_vid_page>
+				<type>text</type>
+				<options>
+					<value>420</value>
+					<label>Page : Largeur de la vidéo</label>
+					<description>en px</description>
+				</options>
+			</width_vid_page>
+			
+			<height_vid_bloc>
+				<type>text</type>
+				<options>
+					<value>190</value>
+					<label>Bloc : Hauteur de la vidéo</label>
+					<description>en px</description>
+				</options>
+			</height_vid_bloc>
+			
+			<width_vid_bloc>
+				<type>text</type>
+				<options>
+					<value>200</value>
+					<label>Bloc : Largeur de la vidéo</label>
+					<description>en px</description>
+				</options>
+			</width_vid_bloc>
+		
+		</elements>
+	</nodes>
+	
+	<templates>
+		<template name="Video" file="video" />			
+	</templates>
+	
+</type>

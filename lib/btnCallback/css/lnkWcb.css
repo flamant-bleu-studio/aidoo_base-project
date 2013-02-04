@@ -1,0 +1,208 @@
+/* CSS Document */
+
+
+/* ----- Mise en forme du bouton ----- */
+
+.LnkWcbForm-trigger {
+
+    display:block; width:265px; height:103px; background:url(../imgs/bt-rappel.jpg) no-repeat left top;border:0; cursor:pointer; margin-top:0;
+ 
+}
+.LnkWcbForm-trigger-femeture{
+
+}
+
+/* ----- Mise en forme générale ----- */
+
+body { margin:0; padding:0; }
+
+.cacher {
+
+	display: none;
+
+}
+
+/* ----- Mise en forme du formulaire en popup ----- */
+
+
+
+.LnkWcbForm-container {
+	/* -----Typographie ----- */
+	font-family:  Helvetica, Arial, Verdana, sans-serif;
+	color: #333333;
+	font-size:11px;
+	line-height:14px;
+	/* ------ */
+	background:url(../imgs/fond-wcb.jpg) no-repeat left top;
+    position: relative;
+	top: 0;
+	left: 0;
+	width: 280px;
+	height: 290px;
+	padding-top:60px;
+	padding-left:265px;
+	padding-right:5px;
+}
+
+
+.LnkWcbForm-container h1 {
+
+	 font-size: 15px; 
+	 font-weight: bold; 
+	 color:#333; 
+	 padding-top: 0.3em; padding-bottom: 0.3em;
+	 font-family:  Helvetica, Arial, Verdana, sans-serif;
+
+}
+
+.LnkWcbForm-container .text-infos { 
+
+}
+
+.LnkWcbForm-container > fieldset {
+
+	margin:0;
+	padding:0;
+	border: none;
+
+}
+.LnkWcbForm-container *fieldset {
+	border: none;
+}
+
+.LnkWcbForm-container .lnkWcbBtValider {
+	display:inline-block;
+	overflow:hidden;
+	margin-left: 1ex;
+	width:59px;
+	height:23px;
+	font-size:11px;
+	font-weight:bold;
+	background: url(../imgs/bt-valider.jpg) no-repeat left top;
+    color: transparent;
+    text-transform: capitalize;
+    text-indent:-9999px;
+	border:none;
+	cursor:pointer;
+}
+
+.LnkWcbForm-container .codeCanal-container .codeCanal {
+
+	color: #766;
+
+}
+
+.LnkWcbForm-container .champ-wcb {	margin: 0.7em 0; margin-left:15px;}
+
+.LnkWcbForm-container .warning:after {}
+
+.LnkWcbForm-container input[type="button"], .LnkWcbForm-container input[type="submit"] {}
+
+.LnkWcbForm-container input[type="text"]{    display:inline-block;}
+
+.LnkWcbPoweredBy {
+    position:absolute;
+	right:20px;
+	bottom:0.5em;
+	text-align: left;
+}
+
+.LnkWcbPoweredBy * {	vertical-align: top;}
+
+.LnkWcbPoweredBy img {	border: none;}
+
+.LnkWcbCnil {
+
+	font-family: sans-serif;
+    font-size: 8px;
+    text-align: right;
+    margin-top: 4px;
+
+}
+
+.LnkWcbCnil .enveloppe {
+
+	display: inline-block;
+    overflow: hidden;
+
+}
+
+.LnkWcbCnil .depliant {	white-space: nowrap;}
+
+.LnkWcbCnil a[href] {	text-decoration: none;}
+
+/* ----- Mise en forme des statuts intermédiaires ----- */
+
+.LnkWcbForm-container .status-bar {	margin: 10px 0 0 0;}
+
+.LnkWcbForm-container .status-bar .user-status {
+
+	color: #CC0001;
+    font-weight: bold;
+    padding: 0;
+    margin:0;
+	min-height: 1em;
+    white-space: pre-line;
+}
+
+.LnkWcbForm-container .status-bar .user-status.busy:before { }
+
+/* ----- Mise en forme des erreurs ----- */
+
+.LnkWcbForm-container .errors {
+     left:20px;
+     position:absolute;
+     right:20px;
+     bottom:30px;
+}
+
+.LnkWcbForm-container .errors * {	margin: 0;}
+
+.LnkWcbForm-container .errors ul {
+
+	padding: 0.5em 2em;
+    color: #333;
+    background-color: #CCC;
+    border: 1px solid red;
+
+}
+
+.LnkWcbForm-container .errors li {	list-style: disc;}
+
+.LnkWcbForm-container input.error, span.error {	border: 1px solid red;}
+
+/* ----- Mise en forme du calendrier ----- */
+
+.LnkWcbForm-container .panneau-date-differe > .LnkWcbDateDiff {
+
+	margin: 0ex;
+
+}
+.LnkWcbForm-container .panneau-date-differe > .LnkWcbDateDiff > .lnk-wcb-date {
+	display:inline-block;
+	margin-bottom:5px;
+
+}
+.LnkWcbForm-container .panneau-date-differe > .LnkWcbDateDiff > .lnk-wcb-time {
+	display:inline-block;
+	margin-bottom:5px;
+
+}
+
+.LnkWcbForm-container .panneau-date-differe > .LnkWcbDateDiff {
+
+	display: block;
+	margin-top:5px;
+}
+
+.LnkWcbForm-container .ui-datepicker.ui-widget.ui-widget-content {
+
+	font-size: 0.6em;
+
+}
+
+.LnkWcbForm-container .panneau-date-differe > .LnkWcbDateDiff > span {
+
+	vertical-align: top;
+
+}

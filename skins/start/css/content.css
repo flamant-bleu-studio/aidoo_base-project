@@ -1,0 +1,20 @@
+/**
+* Style du front partagé pour tinyMCE.
+*/
+
+body{
+	font-family:verdana;
+	font-size:0.688em;
+	color:#000;
+}
+
+a {
+color:#d41917;
+}
+
+a:hover {
+color:#000;
+}
+
+/* Styles en config pour select TinyMCE */
+

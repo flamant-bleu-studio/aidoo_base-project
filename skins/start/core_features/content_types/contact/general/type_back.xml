@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contact_type>
+	<name>general</name>
+	<nodes>
+		<node name="civilite" type="select" width ="100" require="true" label="Civilité : " description="Civilité" >
+			<option value="Civilité" />
+			<option value="Monsieur" label="Monsieur" />
+			<option value="Madame" label="Madame" />
+			<option value="Mademoiselle" label="Mademoiselle" />
+		</node>
+		<node name="nom" type="text" width="100" require="true" label="Nom : " description="Votre nom" class="validate[required,custom[onlyLetterSp]]" />
+		<node name="prenom" type="text" width="100" require="true" label="Prénom : " description="Votre prénom" class="validate[required]" />
+		<node name="telephone" type="text" width="20" require="false" label="Téléphone : " description="Votre téléphone" />
+		<node name="email" type="text" width="100" require="true" label="Email : " description="Votre email" class="validate[required,custom[email]]" validator="email"/>	
+		<node name="sujet" type="text" width="100" require="true" label="Sujet : " description="Sujet : " class="validate[required]"/>
+		<node name="message" type="textarea" cols="25" rows="10" require="true" label="Message : " description="Votre message" class="validate[required]"/>
+	</nodes>
+	<templates>
+		<template name="Formulaire general" file="contact_general" />
+	</templates>
+</contact_type>

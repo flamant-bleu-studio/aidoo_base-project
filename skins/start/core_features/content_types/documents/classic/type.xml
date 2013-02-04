@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<type>
+
+	<name>Classique</name>
+	<description>Zone de contenu unique</description>
+	
+	<nodes>
+		<elements>
+			<content>
+				<type>TinyMCE</type>
+				<options>
+					<label>Contenu</label>
+					<description>Texte principal</description>
+					<translatable>true</translatable>
+				</options>
+			</content>
+		</elements>
+	</nodes>
+	
+	<templates>
+		<template name="Classic" file="classic" />
+	</templates>
+	
+</type>

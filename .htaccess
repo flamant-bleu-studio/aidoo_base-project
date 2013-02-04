@@ -1,0 +1,38 @@
+# ---- protection htaccess (you can use php function realpath, if your homedir is different)-------
+#AuthUserFile /PATH/www/.htpasswd
+#AuthGroupFile /dev/null
+#AuthName "Restreint"
+#AuthType Basic
+#require valid-user
+
+#Pour OVH (PHP 5.2, PHP 5.3, Magic Quote Off)
+#SetEnv PHP_VER 5
+#SetEnv PHP_VER 5_TEST
+#SetEnv MAGIC_QUOTES 0
+
+Options -Indexes
+
+RedirectMatch 404 ^/config(/?|/.*)$
+
+# Character encoding
+AddDefaultCharset utf-8
+AddType 'text/css;  charset=utf-8' .css
+
+RewriteEngine On
+
+# Redirection de www. vers . (decommenter pour activer : NE PAS MODIFIER)
+#RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+#RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+
+# Redirection de . vers www. (decommenter pour activer : NE PAS MODIFIER)
+#RewriteCond %{HTTP_HOST} !^www\.
+#RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^.*/api/.*$
+RewriteRule ^.*$ api.php [L]
+
+RewriteCond %{REQUEST_FILENAME} -s [OR]
+RewriteCond %{REQUEST_FILENAME} -l [OR]
+RewriteCond %{REQUEST_FILENAME} -d 
+RewriteRule ^.*$ - [NC,L]
+RewriteRule !\.(js|ico|txt|gif|jpg|png|css|swf)$ index.php

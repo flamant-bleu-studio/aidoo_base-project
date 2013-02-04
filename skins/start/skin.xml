@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<skin>
+
+	<name>start</name>
+	<skintype>frontofficeskin</skintype>
+	<description>Skin de référence</description>
+	
+	<placeholders>
+		<placeholder>header1</placeholder>
+		<placeholder>header2</placeholder>
+		<placeholder>header3</placeholder>
+		<placeholder>sideleft1</placeholder>
+		<placeholder>sideleft2</placeholder>
+		<placeholder>diaporama</placeholder>
+		<placeholder>sideright1</placeholder>
+		<placeholder>sideright2</placeholder>
+		<placeholder>footer1</placeholder>
+		<placeholder>footer2</placeholder>
+	</placeholders>
+	
+	<templatesThemes>
+		<!-- <theme class="tutu" name="Tutu" /> -->
+	</templatesThemes>
+	
+	<blocsThemes>
+		<!-- <theme class="tutu" name="Tutu" /> -->
+	</blocsThemes>
+	
+	<handsets>
+	</handsets>
+	
+</skin>
