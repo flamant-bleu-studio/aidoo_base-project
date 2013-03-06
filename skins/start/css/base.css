@@ -177,7 +177,7 @@ display:none;
 }
 /* ==== MODULE Diapo / Galerie Photo ==== */
 
-/* Bxslider : classic */
+/* Bxslider */
 .diaporama.bxslider ul {
 margin: 0;
 }
@@ -191,7 +191,7 @@ top: 0;
 z-index: 80;
 }
 
-/* -- Galerie mozaïque -- */
+/* Galerie mozaïque */
 
 #mozaique_photo a.image{
 	display: block;
@@ -208,16 +208,51 @@ z-index: 80;
 }
 
 
-/* ==== Module article - vue mozaïque ==== */
+/* ===== Module article ==== */
 
-#article_cat_grid li {
-	display:inline-block;
-	vertical-align:top;
-	text-align:center;
-	padding:4px;
-	zoom:1;
-	*display: inline;
-	border:none;
+/* Listing classique */
+
+.list_article .desc-category {
+	margin-bottom: 10px;
+}
+
+.list_article .article {
+	margin-bottom: 15px;	
+}
+
+
+.list_article .article .image,
+.list_article .article .content {
+	float: left;	
+}
+
+.list_article .article:after{
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.list_article .article .image {
+	margin-right: 15px;	
+}
+
+.list_article .article .content h3 {
+	padding-top: 0;	
+}
+
+/* Mozaïque */
+
+#article_cat_grid li
+{
+  display:inline-block;
+  vertical-align:top;
+  text-align:center;
+  padding:4px;
+  zoom:1;
+  *display: inline;
+  border:none;
 }
 
 /* ==== Module search ==== */
