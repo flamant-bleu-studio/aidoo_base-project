@@ -46,7 +46,7 @@
 	 * Si un ID de site est stocké en cookie, on inclut le fichier de configuration concerné  
 	 */
 	
-	if($_COOKIE["multi_site"]["change"]){
+	if(isset($_COOKIE["multi_site"]["change"])){
 		$key = (int)$_COOKIE["multi_site"]["id"];
 		
 		if(!array_key_exists($key, $array_multi))
