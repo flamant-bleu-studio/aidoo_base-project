@@ -70,10 +70,6 @@
 	
 	{AppendJsFiles}
 	{AppendJsScripts}
-	
-	<!-- TinyMCE -->
-	{$AppendTinyMCE}
-	
 	{AppendCssFiles}
 	{AppendCssScripts}
 	
@@ -128,14 +124,14 @@
 	<div id="global" class="template-{$template->id_template} {$template->classCss} {$template->theme}">
 		<div id="container">
 		
-			{if $header1 || $header2}
+			{if isset($header1) || isset($header2)}
 			<div id="header" class="ph_horizontal">
-				{if $header1}
+				{if isset($header1)}
 					<div id="header1">{$header1}</div>
 
 				{/if}
 
-				{if $header2}
+				{if isset($header2)}
 					<div id="header2">{$header2}<div class="clear"></div></div>
 				
 				{/if}
@@ -146,12 +142,12 @@
 			
 			<div id="container_center">
 				
-				{if $sideleft1 || $sideleft2}
+				{if isset($sideleft1) || isset($sideleft2)}
 				<div id="sidebar_left"  class="ph_vertical">
-					{if $sideleft1}
+					{if isset($sideleft1)}
 						<div id="sidebar_left1">{$sideleft1}</div>
 					{/if}
-					{if $sideleft2}
+					{if isset($sideleft2)}
 						<div id="sidebar_left2">{$sideleft2}</div>
 					{/if}
 				</div>
@@ -159,36 +155,35 @@
 				
 				<div id="container_content">
 				
-					{if $contenttop}
+					{if isset($contenttop)}
 					<div id="content_top" class="ph_horizontal">
 						<div id="content_top1">{$contenttop}</div>
 						<div class="clear"></div>
 					</div>
 					{/if}
 
-					{if $layout->content || $contentmore}
+					{if isset($layout->content) || isset($contentmore)}
 					<div id="content_middle">
-						{if $contentleft}
+						{if isset($contentleft)}
 							<div id="contentleft" class="ph_vertical">{$contentleft}</div>
 						{/if}
 						
-						{if $layout->content || $contentmore}
-							<div id="content">
-								<div class="content-core-defaut">
-									{$layout->content} {$contentmore}
-									<div class="clear"></div>
-								</div>
+						<div id="content">
+							<div class="content-core-defaut">
+								{if isset($layout->content)}{$layout->content}{/if}
+								{if isset($contentmore)}{$contentmore}{/if}
+								<div class="clear"></div>
 							</div>
-						{/if}
+						</div>
 						
-						{if $contentright}
+						{if isset($contentright)}
 							<div id="contentright" class="ph_vertical">{$contentright}</div>
 						{/if}
 						<div class="clear"></div>
 					</div>
 					{/if}
 					
-					{if $contentbottom}
+					{if isset($contentbottom)}
 					<div id="contentbottom"  class="ph_horizontal">
 						<div id="content_bottom1">{$contentbottom}</div>
 					</div>
@@ -197,12 +192,12 @@
 					
 				</div>
 			 
-				{if $sideright1 || $sideright2}
+				{if isset($sideright1) || isset($sideright2)}
 				<div id="sidebar_right" class="ph_vertical">
-					{if $sideright1}
+					{if isset($sideright1)}
 						<div id="sidebar_right1">{$sideright1}</div>
 					{/if}
-					{if $sideright2}
+					{if isset($sideright2)}
 						<div id="sidebar_right2">{$sideright2}</div>
 					{/if}
 				</div>
@@ -210,14 +205,14 @@
 				<div class="clear"></div>
 			</div>
 
-			{if $footer1 || $footer2}
+			{if isset($footer1) || isset($footer2)}
 			<div id="footer"  class="ph_horizontal">
-				{if $footer1}				
+				{if isset($footer1)}				
 				<div id="footer1">{$footer1}</div>
 
 				<div class="clear"></div>
 				{/if}
-				{if $footer2}	
+				{if isset($footer2)}	
 				<div id="footer2">{$footer2}</div>
 				{/if}
 				<div class="clear"></div>
