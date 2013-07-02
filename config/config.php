@@ -66,6 +66,7 @@
 	define("REDIRECT_URI_SYSTEM_TO_REWRITE", true);
 	
 	// Cache navigateur
-	define('CMS_CACHE_ASSET', false); // false, true, 'force'
-
+	define('CACHE_CSS_JS', false);
+	define('CACHE_CSS_JS_MINI', true);
+	define('CACHE_CSS_JS_GENERATE', "force");
 	
