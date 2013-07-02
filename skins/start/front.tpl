@@ -34,7 +34,7 @@
 	</script>
 	
 	{nocache}{AssetJs}
-	<script src="{$smarty.const.COMMON_LIB_PATH}/lib/jquery/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="{$smarty.const.COMMON_LIB_PATH}/lib/jquery/jquery-1.7.1.min.js"></script>
 	<script type="text/javascript" src="{$smarty.const.COMMON_LIB_PATH}/lib/ajaxAidoo/script.js"></script>
 	{/AssetJs}{/nocache}
 	
