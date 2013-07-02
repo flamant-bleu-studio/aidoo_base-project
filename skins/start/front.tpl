@@ -31,91 +31,33 @@
 		var currentLangId = "{$smarty.const.CURRENT_LANG_ID}";
 		var ajax_apiKey = "{$ajax_apiKey}";
 		var commonLibUrl = "{$smarty.const.COMMON_LIB_PATH}";
-
-		function goback() {
-		history.go(-1);
-		}
 	</script>
 	
-	{appendFile type="jquery" src="/lib/jquery/jquery-1.7.1.min.js" cache="true"}
-	{appendFile type="jquery" src="/lib/jquery/jquery-ui-1.8.16.min.js" cache="true"}
-	{appendFile type="jquery" src="/lib/jquery/jquery.easing.1.3.min.js" cache="true"}
-	{appendFile type="jquery" src="/lib/jquery/hoverIntent.min.js" cache="true"}
-	{appendFile type="jquery" src="{$smarty.const.COMMON_LIB_PATH}/lib/bgiframe/jquery.bgiframe.min.js" cache="true"}
-	{appendFile type="jquery" src="/lib/jquery/jquery.scrollTo-min.js" cache="true"}
-	{appendFile type="jquery" src="/lib/jquery/jquery.localscroll-min.js" cache="true"}	
-	{appendFile type="jquery" src="{$smarty.const.COMMON_LIB_PATH}/lib/ajaxAidoo/script.js" cache="true"}
-	{appendFile type="jquery" src="{$smarty.const.COMMON_LIB_PATH}/lib/fragmentHTML/script.js" cache="true"}
-	{appendFile type="jquery" src="{$smarty.const.COMMON_LIB_PATH}/lib/jqueryBBQ/script.js" cache="true"}
-
-	{appendFile type="css" src="/lib/resetcss/reset.min.css" cache="true"}
-	{appendFile type="css" src="{$skinUrl}/css/base.css" cache="true"}
-	{appendFile type="css" src="{$skinUrl}/css/content.css" cache="true"}
-	{appendFile type="css" src="{$skinUrl}/css/design.css" cache="true"}
-	{appendFile type="css" src="{$skinUrl}/css/blocs.css" cache="true"}
+	{nocache}{AssetJs}
+	<script src="{$smarty.const.COMMON_LIB_PATH}/lib/jquery/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="{$smarty.const.COMMON_LIB_PATH}/lib/ajaxAidoo/script.js"></script>
+	{/AssetJs}{/nocache}
 	
-	<link rel="shortcut icon" type="image/x-icon" href="{$baseUrl}{$skinUrl}/img/favicon.ico" />
-
-	<!--[if IE 7]>
-	<link rel="stylesheet" href="{$skinUrl}/css/style_ie7.css" type="text/css" title="style" />
-	<![endif]-->
-	
-	<!--[if gte IE 9]>
-		<link rel="stylesheet" href="{$skinUrl}/css/ie9.css" type="text/css" title="style" />
-	<![endif]-->
-
-	{AppendCacheCssJs}
-
 	{AppendJQueryLibs}
-	
 	{AppendJsFiles}
 	{AppendJsScripts}
+	
+	{nocache}{AssetCss}
+	<link rel="stylesheet" href="/lib/resetcss/reset.min.css" type="text/css" />
+	<link rel="stylesheet" href="{$skinUrl}/css/content.css" type="text/css" />
+	<link rel="stylesheet" href="{$baseUrl}{$skinUrl}/css/base.css" type="text/css" />
+	<link rel="stylesheet" href="{$baseUrl}{$skinUrl}/css/design.css" type="text/css" />
+	<link rel="stylesheet" href="{$baseUrl}{$skinUrl}/css/blocs.css" type="text/css" />
+	{/AssetCss}{/nocache}
+	
 	{AppendCssFiles}
 	{AppendCssScripts}
-	
+	{$AppendTinyMCE}
 	{AppendHeadContent}
+	{GenerateStyleBackground}
+	{AppendAnalyticsTracking}
 	
-	{if $GoogleAnalyticsAccount}
-		<script type="text/javascript">
-		  var _gaq = _gaq || [];
-		  _gaq.push(['_setAccount', '{$GoogleAnalyticsAccount}']);
-		  _gaq.push(['_trackPageview']);
-		  (function() {
-			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		  })();
-		</script>
-	{/if}
-	
-	<style>
-		{if $template->bgType == 1}
-			html {
-				background-image: url({image folder="templates" name=$template->bgPicture});
-				background-repeat: {if !$template->bgRepeat}no-repeat{else if $template->bgRepeat == 1}repeat-x{else if $template->bgRepeat == 2}repeat-y{else if $template->bgRepeat == 3}repeat{/if};
-				background-position: top center;
-				background-color: #{$template->bgColor1};
-			}
-		{else if $template->bgType == 2}
-			html {
-				background-color: #{$template->bgColor1};
-			}
-		{else if $template->bgType == 3}
-		html {
-			{if !$template->bgGradient}
-				background: -webkit-gradient(linear, left top, left bottom, from(#{$template->bgColor1}), to(#{$template->bgColor2}));
-				background: -moz-linear-gradient(top, #{$template->bgColor1}, #{$template->bgColor2});
-				filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#{$template->bgColor1}, endColorstr=#{$template->bgColor2});
-				-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#{$template->bgColor1}, endColorstr=#{$template->bgColor2})";
-			{else}
-				background: -webkit-gradient(linear, left top, right top, from(#{$template->bgColor1}), to(#{$template->bgColor2}), color-stop(0.7, #{$template->bgColor2}));
-				background: -moz-linear-gradient(left top, #{$template->bgColor1}, #{$template->bgColor2} 70%);
-				filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#{$template->bgColor1}, endColorStr=#{$template->bgColor2}, GradientType=1);
-				-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#{$template->bgColor1}, endColorstr=#{$template->bgColor2}, GradientType=1)";
-			{/if}
-		}
-		{/if}
-	</style>
+	<link rel="shortcut icon" type="image/x-icon" href="{$baseUrl}{$skinUrl}/img/favicon.ico" />
 	
 </head>
 
@@ -133,7 +75,6 @@
 
 				{if isset($header2)}
 					<div id="header2">{$header2}<div class="clear"></div></div>
-				
 				{/if}
 				<div class="clear"></div>
 			</div>
@@ -228,4 +169,3 @@
 	
 </body>
 </html>
-
